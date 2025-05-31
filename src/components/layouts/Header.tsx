@@ -7,10 +7,10 @@ import { MdFacebook } from "react-icons/md";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaPinterest } from "react-icons/fa";
 import { SiYoutubemusic } from "react-icons/si";
-import { WiDayThunderstorm } from "react-icons/wi";
 import { links } from "@/data/NavLinks";
 import { Button } from "../ui/button";
 import { AnimatePresence, motion } from "framer-motion";
+import Logo from "../identity/Logo";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -45,10 +45,7 @@ const Header = () => {
       </div>
       <section className="px-2 lg:px-[5%] py-3 flex items-center justify-between relative">
         <div>
-          <h3 className="flex items-center text-3xl md:text-4xl font-normal text-secondary">
-            <WiDayThunderstorm className="text-primary" />
-            GiantRoofers
-          </h3>
+          <Logo className="flex items-center text-3xl md:text-4xl font-normal text-secondary" />
           {/* Desktop Menu */}
         </div>
         <div className="md:flex lg:gap-x-5 md:gap-x-3 hidden">
