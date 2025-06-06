@@ -1,3 +1,4 @@
+import ContactSction from '@/components/home/ContactSction'
 import Hero from '@/components/home/Hero'
 import React from 'react'
 
@@ -7,6 +8,7 @@ const Home = () => {
     <main >
       <section>
          <Hero />
+         <ContactSction />
       </section>
     </main>
   )
